@@ -182,56 +182,34 @@ public class JFramePrincipal extends javax.swing.JFrame {
         if (r_claro.isSelected()) {
             Color MyColor = new Color(235,235,235);
             getContentPane().setBackground(MyColor);
-            r_claro.setForeground(Color.BLACK);
-            r_oscuro.setForeground(Color.BLACK);
-            r_morado.setForeground(Color.BLACK);
-            r_azul.setForeground(Color.BLACK);
-            l_text1.setForeground(Color.BLACK);
-            l_text2.setForeground(Color.BLACK);
-            l_text3.setForeground(Color.BLACK);
-            l_text4.setForeground(Color.BLACK);
-            l_text5.setForeground(Color.BLACK);
-            l_alert.setForeground(Color.BLACK);
+            changetext(Color.BLACK);
         } else if (r_oscuro.isSelected()) {
             Color MyColor = new Color(34,39,44);
             getContentPane().setBackground(MyColor);
-            r_claro.setForeground(Color.WHITE);
-            r_oscuro.setForeground(Color.WHITE);
-            r_morado.setForeground(Color.WHITE);
-            r_azul.setForeground(Color.WHITE);
-            l_text1.setForeground(Color.WHITE);
-            l_text2.setForeground(Color.WHITE);
-            l_text3.setForeground(Color.WHITE);
-            l_text4.setForeground(Color.WHITE);
-            l_text5.setForeground(Color.WHITE);
-            l_alert.setForeground(Color.WHITE);
+            changetext(Color.WHITE);
         } else if (r_morado.isSelected()) {
             Color MyColor = new Color(128, 0, 128);
             getContentPane().setBackground(MyColor);
-            r_claro.setForeground(Color.WHITE);
-            r_oscuro.setForeground(Color.WHITE);
-            r_morado.setForeground(Color.WHITE);
-            r_azul.setForeground(Color.WHITE);
-            l_text1.setForeground(Color.WHITE);
-            l_text2.setForeground(Color.WHITE);
-            l_text3.setForeground(Color.WHITE);
-            l_text4.setForeground(Color.WHITE);
-            l_text5.setForeground(Color.WHITE);
-            l_alert.setForeground(Color.WHITE);
+            changetext(Color.WHITE);
         } else if (r_azul.isSelected()) {
             Color MyColor = new Color(85,137,249);
             getContentPane().setBackground(MyColor);
-            r_claro.setForeground(Color.WHITE);
-            r_oscuro.setForeground(Color.WHITE);
-            r_morado.setForeground(Color.WHITE);
-            r_azul.setForeground(Color.WHITE);
-            l_text1.setForeground(Color.WHITE);
-            l_text2.setForeground(Color.WHITE);
-            l_text3.setForeground(Color.WHITE);
-            l_text4.setForeground(Color.WHITE);
-            l_text5.setForeground(Color.WHITE);
-            l_alert.setForeground(Color.WHITE);
+            changetext(Color.WHITE);
         }
+    }
+
+    //CHANGE TEXT COLOR
+    private void changetext(Color a) {
+        r_claro.setForeground(a);
+        r_oscuro.setForeground(a);
+        r_morado.setForeground(a);
+        r_azul.setForeground(a);
+        l_text1.setForeground(a);
+        l_text2.setForeground(a);
+        l_text3.setForeground(a);
+        l_text4.setForeground(a);
+        l_text5.setForeground(a);
+        l_alert.setForeground(a);
     }
 
     //SET ALERT
