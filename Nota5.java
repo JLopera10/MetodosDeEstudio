@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Github;
+package com.mycompany.metodosdeestudio;
+
+import java.awt.Color;
 
 /**
  *
@@ -32,16 +34,22 @@ public class Nota5 extends javax.swing.JFrame {
         b_editartexto = new javax.swing.JButton();
         b_borrartexto = new javax.swing.JButton();
         text_titulo = new javax.swing.JTextField();
-        note1 = new javax.swing.JLabel();
-        note2 = new javax.swing.JLabel();
-        note3 = new javax.swing.JLabel();
-        note4 = new javax.swing.JLabel();
-        note1title = new javax.swing.JLabel();
-        note2title = new javax.swing.JLabel();
-        note3title = new javax.swing.JLabel();
-        note4title = new javax.swing.JLabel();
+        nota1content = new javax.swing.JLabel();
+        nota2content = new javax.swing.JLabel();
+        nota3content = new javax.swing.JLabel();
+        nota4content = new javax.swing.JLabel();
+        nota5content = new javax.swing.JLabel();
+        nota1title = new javax.swing.JLabel();
+        nota2title = new javax.swing.JLabel();
+        nota3title = new javax.swing.JLabel();
+        nota4title = new javax.swing.JLabel();
+        nota5title = new javax.swing.JLabel();
+        comingfrom = new javax.swing.JLabel();
+        tema = new javax.swing.JLabel();
+        tone = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         text_contenido.setColumns(20);
         text_contenido.setRows(5);
@@ -64,29 +72,70 @@ public class Nota5 extends javax.swing.JFrame {
         text_titulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         text_titulo.setText("NOTA 3");
 
-        note1.setText("jLabel2");
-        note1.setPreferredSize(new java.awt.Dimension(0, 0));
+        nota1content.setText("jLabel1");
+        nota1content.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota1content.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota1content.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        note2.setText("jLabel2");
-        note2.setPreferredSize(new java.awt.Dimension(0, 0));
+        nota2content.setText("jLabel1");
+        nota2content.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota2content.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota2content.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        note3.setText("jLabel2");
-        note3.setPreferredSize(new java.awt.Dimension(0, 0));
+        nota3content.setText("jLabel1");
+        nota3content.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota3content.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota3content.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        note4.setText("jLabel2");
-        note4.setPreferredSize(new java.awt.Dimension(0, 0));
+        nota4content.setText("jLabel1");
+        nota4content.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota4content.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota4content.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        note1title.setText("jLabel1");
-        note1title.setPreferredSize(new java.awt.Dimension(0, 0));
+        nota5content.setText("jLabel1");
+        nota5content.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota5content.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota5content.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        note2title.setText("jLabel1");
-        note2title.setPreferredSize(new java.awt.Dimension(0, 0));
+        nota1title.setText("jLabel1");
+        nota1title.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota1title.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota1title.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        note3title.setText("jLabel1");
-        note3title.setPreferredSize(new java.awt.Dimension(0, 0));
+        nota2title.setText("jLabel1");
+        nota2title.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota2title.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota2title.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        note4title.setText("jLabel1");
-        note4title.setPreferredSize(new java.awt.Dimension(0, 0));
+        nota3title.setText("jLabel1");
+        nota3title.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota3title.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota3title.setPreferredSize(new java.awt.Dimension(0, 0));
+
+        nota4title.setText("jLabel1");
+        nota4title.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota4title.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota4title.setPreferredSize(new java.awt.Dimension(0, 0));
+
+        nota5title.setText("jLabel1");
+        nota5title.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota5title.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota5title.setPreferredSize(new java.awt.Dimension(0, 0));
+
+        comingfrom.setText("jLabel1");
+        comingfrom.setMaximumSize(new java.awt.Dimension(0, 0));
+        comingfrom.setMinimumSize(new java.awt.Dimension(0, 0));
+        comingfrom.setPreferredSize(new java.awt.Dimension(0, 0));
+
+        tema.setText("jLabel1");
+        tema.setMaximumSize(new java.awt.Dimension(0, 0));
+        tema.setMinimumSize(new java.awt.Dimension(0, 0));
+        tema.setPreferredSize(new java.awt.Dimension(0, 0));
+
+        tone.setText("jLabel1");
+        tone.setMaximumSize(new java.awt.Dimension(0, 0));
+        tone.setMinimumSize(new java.awt.Dimension(0, 0));
+        tone.setPreferredSize(new java.awt.Dimension(0, 0));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -95,38 +144,82 @@ public class Nota5 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(7, 7, 7)
-                                .addComponent(b_editartexto)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b_borrartexto)
-                                .addGap(18, 18, 18)
-                                .addComponent(note1title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(note1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(175, 175, 175)
-                                .addComponent(note2title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(note3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(175, 175, 175)
-                                .addComponent(note4title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(note2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(175, 175, 175)
-                                .addComponent(note3title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(note4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(7, 7, 7)
+                        .addComponent(b_editartexto)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(b_borrartexto)
+                        .addGap(0, 237, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
                             .addComponent(text_titulo))))
                 .addContainerGap())
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota1content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota2content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota3content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota4content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota5content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota1title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota2title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota3title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota4title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota5title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(200, 200, 200)
+                    .addComponent(comingfrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(200, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(200, 200, 200)
+                    .addComponent(tema, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(200, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(200, 200, 200)
+                    .addComponent(tone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(200, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -135,36 +228,76 @@ public class Nota5 extends javax.swing.JFrame {
                 .addComponent(text_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(b_borrartexto)
-                            .addComponent(b_editartexto)
-                            .addComponent(note1title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(note1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(note2title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(note3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(note4title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(note2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(note3title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(note4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(b_borrartexto)
+                    .addComponent(b_editartexto))
+                .addContainerGap(24, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota1content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota2content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota3content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota4content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota5content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota1title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota2title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota3title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota4title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota5title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(143, 143, 143)
+                    .addComponent(comingfrom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(143, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(143, 143, 143)
+                    .addComponent(tema, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(143, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(143, 143, 143)
+                    .addComponent(tone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(143, Short.MAX_VALUE)))
         );
 
         pack();
@@ -176,24 +309,61 @@ public class Nota5 extends javax.swing.JFrame {
     }                                             
 
     private void b_editartextoActionPerformed(java.awt.event.ActionEvent evt) {                                              
-        //Main Note
-        JFramePrincipal mainframe = new JFramePrincipal();
-        mainframe.note5.setText(text_contenido.getText());
-        mainframe.b_note5.setText(text_titulo.getText());
-        //Note #1 Transfer
-        mainframe.note1.setText(note1.getText());
-        mainframe.b_note1.setText(note1title.getText());
-        //Note #2 Transfer
-        mainframe.note2.setText(note2.getText());
-        mainframe.b_note2.setText(note2title.getText());
-        //Note #3 Transfer
-        mainframe.note3.setText(note3.getText());
-        mainframe.b_note3.setText(note3title.getText());
-        //Note #4 Transfer
-        mainframe.note4.setText(note4.getText());
-        mainframe.b_note4.setText(note4title.getText());
-        //Open JFrame
-        mainframe.show();
+        Notas notes = new Notas();
+        this.nota5content.setText(this.text_contenido.getText());
+        this.nota5title.setText(this.text_titulo.getText());
+        //SEND NOTES
+        notes.comingfrom.setText(this.comingfrom.getText());
+        notes.comingfrom.setVisible(false);
+        
+        notes.nota1content.setText(this.nota1content.getText());
+        notes.nota2content.setText(this.nota2content.getText());
+        notes.nota3content.setText(this.nota3content.getText());
+        notes.nota4content.setText(this.nota4content.getText());
+        notes.nota5content.setText(this.nota5content.getText());
+        
+        notes.b_nota1.setText(this.nota1title.getText());
+        notes.b_nota2.setText(this.nota2title.getText());
+        notes.b_nota3.setText(this.nota3title.getText());
+        notes.b_nota4.setText(this.nota4title.getText());
+        notes.b_nota5.setText(this.nota5title.getText());
+        //SEND NOTES END
+        
+        //SEND THEME AND TONE
+            notes.tema.setText(this.tema.getText());
+            notes.tone.setText(this.tone.getText());
+            
+            if (tema.getText().equals("clara")) {
+                Color MyColor = new Color(235,235,235);
+                notes.getContentPane().setBackground(MyColor);
+                notes.changetext(Color.BLACK);
+            } else if (tema.getText().equals("oscura")) {
+                Color MyColor = new Color(34,39,44);
+                notes.getContentPane().setBackground(MyColor);
+                notes.changetext(Color.WHITE);
+            } else if (tema.getText().equals("morada")) {
+                Color MyColor = new Color(128, 0, 128);
+                notes.getContentPane().setBackground(MyColor);
+                notes.changetext(Color.WHITE);
+            } else if (tema.getText().equals("azul")) {
+                Color MyColor = new Color(85,137,249);
+                notes.getContentPane().setBackground(MyColor);
+                notes.changetext(Color.WHITE);
+            }
+            
+        //SEND THEME AND TONE END
+        
+        //SEND TASKS
+            notes.size = size;
+            notes.jlistdata = new String[notes.size];
+            if (size != 0) {
+               for (int i = 0; i<notes.size; i++) {
+                notes.jlistdata[i] = jlistdata[i];
+            }
+            }
+        //END SEND TASKS
+        
+        notes.show();
         dispose();
     }                                             
    
@@ -239,19 +409,26 @@ public class Nota5 extends javax.swing.JFrame {
         });
     }
 
+    public int size = 0;
+    public String[] jlistdata;
     // Variables declaration - do not modify                     
     private javax.swing.JButton b_borrartexto;
     private javax.swing.JButton b_editartexto;
+    public javax.swing.JLabel comingfrom;
     private javax.swing.JScrollPane jScrollPane1;
-    public javax.swing.JLabel note1;
-    public javax.swing.JLabel note1title;
-    public javax.swing.JLabel note2;
-    public javax.swing.JLabel note2title;
-    public javax.swing.JLabel note3;
-    public javax.swing.JLabel note3title;
-    public javax.swing.JLabel note4;
-    public javax.swing.JLabel note4title;
+    public javax.swing.JLabel nota1content;
+    public javax.swing.JLabel nota1title;
+    public javax.swing.JLabel nota2content;
+    public javax.swing.JLabel nota2title;
+    public javax.swing.JLabel nota3content;
+    public javax.swing.JLabel nota3title;
+    public javax.swing.JLabel nota4content;
+    public javax.swing.JLabel nota4title;
+    public javax.swing.JLabel nota5content;
+    public javax.swing.JLabel nota5title;
+    public javax.swing.JLabel tema;
     public javax.swing.JTextArea text_contenido;
     public javax.swing.JTextField text_titulo;
+    public javax.swing.JLabel tone;
     // End of variables declaration                   
 }
