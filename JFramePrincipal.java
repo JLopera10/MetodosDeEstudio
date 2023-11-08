@@ -1,4 +1,4 @@
-package Github;
+package com.mycompany.metodosdeestudio;
 
 import java.awt.Color;
 import java.util.Timer;
@@ -17,12 +17,6 @@ public class JFramePrincipal extends javax.swing.JFrame {
     //FORM CREATION
     public JFramePrincipal() {
         initComponents();
-        l_alert.setVisible(false);
-        note1.setVisible(false);
-        note2.setVisible(false);
-        note3.setVisible(false);
-        note4.setVisible(false);
-        note5.setVisible(false);
     }
 
     //FORM INITIALIZATION
@@ -30,452 +24,513 @@ public class JFramePrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
-        bg_gamacolor = new javax.swing.ButtonGroup();
-        r_claro = new javax.swing.JRadioButton();
-        r_oscuro = new javax.swing.JRadioButton();
-        r_morado = new javax.swing.JRadioButton();
-        r_azul = new javax.swing.JRadioButton();
-        l_text1 = new javax.swing.JLabel();
-        b_confirmarcol = new javax.swing.JButton();
-        sp_hora = new javax.swing.JSpinner();
-        sp_minuto = new javax.swing.JSpinner();
-        l_text3 = new javax.swing.JLabel();
-        l_text4 = new javax.swing.JLabel();
-        l_text2 = new javax.swing.JLabel();
-        b_confirmartiempo = new javax.swing.JButton();
-        l_alert = new javax.swing.JLabel();
-        sp_segundo = new javax.swing.JSpinner();
-        l_text5 = new javax.swing.JLabel();
-        l_creacionnotas = new javax.swing.JLabel();
-        b_note1 = new javax.swing.JButton();
-        b_note2 = new javax.swing.JButton();
-        b_note3 = new javax.swing.JButton();
-        b_note4 = new javax.swing.JButton();
-        b_note5 = new javax.swing.JButton();
-        note1 = new javax.swing.JLabel();
-        note2 = new javax.swing.JLabel();
-        note3 = new javax.swing.JLabel();
-        note4 = new javax.swing.JLabel();
-        note5 = new javax.swing.JLabel();
+        Label1 = new javax.swing.JLabel();
+        Label4 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        Label3 = new javax.swing.JLabel();
+        Label2 = new javax.swing.JLabel();
+        Label5 = new javax.swing.JLabel();
+        nota1content = new javax.swing.JLabel();
+        nota2content = new javax.swing.JLabel();
+        nota3content = new javax.swing.JLabel();
+        nota4content = new javax.swing.JLabel();
+        nota5content = new javax.swing.JLabel();
+        nota1title = new javax.swing.JLabel();
+        nota2title = new javax.swing.JLabel();
+        nota3title = new javax.swing.JLabel();
+        nota4title = new javax.swing.JLabel();
+        nota5title = new javax.swing.JLabel();
+        tema = new javax.swing.JLabel();
+        tone = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Metodos De Estudio");
-        setBackground(Color.WHITE);
         setLocation(new java.awt.Point(0, 0));
-        setPreferredSize(new java.awt.Dimension(1000, 500));
+        setPreferredSize(new java.awt.Dimension(1024, 768));
         setResizable(false);
-        setSize(new java.awt.Dimension(1000, 650));
+        setSize(new java.awt.Dimension(1024, 768));
 
-        bg_gamacolor.add(r_claro);
-        r_claro.setText("Claro");
+        Label1.setFont(new java.awt.Font("Sitka Small", 1, 36)); // NOI18N
+        Label1.setText("METODOS DE ESTUDIO");
 
-        bg_gamacolor.add(r_oscuro);
-        r_oscuro.setText("Oscuro");
+        Label4.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        Label4.setText("metodo de estudio se adapta mas a ti, o si quieres ");
 
-        bg_gamacolor.add(r_morado);
-        r_morado.setText("Morado");
-
-        bg_gamacolor.add(r_azul);
-        r_azul.setText("Azul");
-
-        l_text1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        l_text1.setText("SELECCIONAR GAMA DE COLORES");
-
-        b_confirmarcol.setText("CONFIRMAR");
-        b_confirmarcol.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        jButton1.setText("REALIZAR FORMULARIO");
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton1.setPreferredSize(new java.awt.Dimension(200, 50));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b_confirmarcolActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        sp_hora.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
-
-        sp_minuto.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
-
-        l_text3.setText("Horas");
-
-        l_text4.setText("Minutos");
-
-        l_text2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        l_text2.setText("CONFIGURAR ALERTA");
-
-        b_confirmartiempo.setText("CONFIRMAR");
-        b_confirmartiempo.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        jButton2.setText("VISUAL");
+        jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton2.setPreferredSize(new java.awt.Dimension(200, 50));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                try {
-                    b_confirmartiempoActionPerformed(evt);
-                } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
+                jButton2ActionPerformed(evt);
             }
         });
 
-        l_alert.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        l_alert.setText("¡¡¡ALARMA!!!");
-
-        sp_segundo.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
-
-        l_text5.setText("Segundos");
-
-        l_creacionnotas.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        l_creacionnotas.setText("CREACION DE NOTAS");
-
-        b_note1.setBackground(new java.awt.Color(255, 255, 153));
-        b_note1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        b_note1.setText("Nota #1");
-        b_note1.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        b_note1.addActionListener(new java.awt.event.ActionListener() {
+        jButton3.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        jButton3.setText("AUDITIVO");
+        jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.setPreferredSize(new java.awt.Dimension(200, 50));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b_note1ActionPerformed(evt);
+                jButton3ActionPerformed(evt);
             }
         });
 
-        b_note2.setBackground(new java.awt.Color(255, 255, 153));
-        b_note2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        b_note2.setText("Nota #2");
-        b_note2.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        b_note2.addActionListener(new java.awt.event.ActionListener() {
+        jButton4.setFont(new java.awt.Font("Georgia", 0, 12)); // NOI18N
+        jButton4.setText("KINESTESICO");
+        jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton4.setPreferredSize(new java.awt.Dimension(200, 50));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b_note2ActionPerformed(evt);
+                jButton4ActionPerformed(evt);
             }
         });
 
-        b_note3.setBackground(new java.awt.Color(255, 255, 153));
-        b_note3.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        b_note3.setText("Nota #3");
-        b_note3.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        b_note3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b_note3ActionPerformed(evt);
-            }
-        });
+        Label3.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        Label3.setText("si quieres realizar el formulario para encontrar que");
 
-        b_note4.setBackground(new java.awt.Color(255, 255, 153));
-        b_note4.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        b_note4.setText("Nota #4");
-        b_note4.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        b_note4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b_note4ActionPerformed(evt);
-            }
-        });
+        Label2.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        Label2.setText("Bienvenido al programa, para iniciar, debes decidir");
 
-        b_note5.setBackground(new java.awt.Color(255, 255, 153));
-        b_note5.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        b_note5.setText("Nota #5");
-        b_note5.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        b_note5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b_note5ActionPerformed(evt);
-            }
-        });
+        Label5.setFont(new java.awt.Font("Sitka Small", 0, 18)); // NOI18N
+        Label5.setText("elegir directamente uno de los metodos disponibles");
 
-        note1.setText("NOTA 1");
+        nota1title.setText("Nota #1");
+        nota1title.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota1title.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota1title.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        note2.setText("NOTA 2");
+        nota2title.setText("Nota #2");
+        nota2title.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota2title.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota2title.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        note3.setText("NOTA 3");
+        nota3title.setText("Nota #3");
+        nota3title.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota3title.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota3title.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        note4.setText("NOTA 4");
+        nota4title.setText("Nota #4");
+        nota4title.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota4title.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota4title.setPreferredSize(new java.awt.Dimension(0, 0));
 
-        note5.setText("NOTA 5");
+        nota5title.setText("Nota #5");
+        nota5title.setMaximumSize(new java.awt.Dimension(0, 0));
+        nota5title.setMinimumSize(new java.awt.Dimension(0, 0));
+        nota5title.setPreferredSize(new java.awt.Dimension(0, 0));
+
+        tema.setText("clara");
+        tema.setMaximumSize(new java.awt.Dimension(0, 0));
+        tema.setMinimumSize(new java.awt.Dimension(0, 0));
+        tema.setPreferredSize(new java.awt.Dimension(0, 0));
+
+        tone.setText("jLabel1");
+        tone.setMaximumSize(new java.awt.Dimension(0, 0));
+        tone.setMinimumSize(new java.awt.Dimension(0, 0));
+        tone.setPreferredSize(new java.awt.Dimension(0, 0));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(l_creacionnotas)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(289, 289, 289)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Label4)
+                            .addComponent(Label3)
+                            .addComponent(Label2)
+                            .addComponent(Label5)))
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(217, 217, 217)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(r_morado, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(r_azul, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(r_oscuro, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(r_claro, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(b_confirmarcol)
-                            .addComponent(l_text1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 297, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(l_text2)
-                            .addComponent(b_confirmartiempo)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(sp_hora, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(l_text3))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(sp_minuto, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(l_text4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(l_text5)
-                                    .addComponent(sp_segundo, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(l_alert))
-                        .addGap(21, 21, 21))
+                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(b_note1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b_note2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b_note3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b_note4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b_note5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(note1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(note2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(note3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(note4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(note5)))
-                        .addGap(0, 370, Short.MAX_VALUE))))
+                        .addGap(299, 299, 299)
+                        .addComponent(Label1)))
+                .addContainerGap(601, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota1content)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota2content)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota3content)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota4content)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota5content)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota1title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota2title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota3title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota4title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota5title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(721, 721, 721)
+                    .addComponent(tema, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(721, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(721, 721, 721)
+                    .addComponent(tone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(721, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(l_text1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(r_claro)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(r_oscuro)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(r_morado)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(r_azul)
-                        .addGap(18, 18, 18)
-                        .addComponent(b_confirmarcol))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(l_text2)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(41, 41, 41)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(l_text3)
-                                    .addComponent(l_text4)
-                                    .addComponent(l_text5))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(sp_hora, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(sp_minuto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(sp_segundo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(b_confirmartiempo)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(l_alert, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(86, 86, 86)
-                .addComponent(l_creacionnotas)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(93, 93, 93)
+                .addComponent(Label1)
+                .addGap(44, 44, 44)
+                .addComponent(Label2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Label3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Label4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Label5)
+                .addGap(65, 65, 65)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(129, 129, 129)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(b_note1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(b_note2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(b_note3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(b_note4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(b_note5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(note1)
-                    .addComponent(note2)
-                    .addComponent(note3)
-                    .addComponent(note4)
-                    .addComponent(note5))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(171, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota1content)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota2content)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota3content)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota4content)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota5content)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota1title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota2title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota3title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota4title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(nota5title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(388, 388, 388)
+                    .addComponent(tema, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(388, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(388, 388, 388)
+                    .addComponent(tone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(388, Short.MAX_VALUE)))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>                        
-    
-    //COLOR CHANGE
-    private void b_confirmarcolActionPerformed(java.awt.event.ActionEvent evt) {                                               
-        if (r_claro.isSelected()) {
-            Color MyColor = new Color(235,235,235);
-            getContentPane().setBackground(MyColor);
-            changetext(Color.BLACK);
-        } else if (r_oscuro.isSelected()) {
-            Color MyColor = new Color(34,39,44);
-            getContentPane().setBackground(MyColor);
-            changetext(Color.WHITE);
-        } else if (r_morado.isSelected()) {
-            Color MyColor = new Color(128, 0, 128);
-            getContentPane().setBackground(MyColor);
-            changetext(Color.WHITE);
-        } else if (r_azul.isSelected()) {
-            Color MyColor = new Color(85,137,249);
-            getContentPane().setBackground(MyColor);
-            changetext(Color.WHITE);
-        }
-    }                                              
 
-    //CHANGE TEXT
-    private void changetext(Color a) {
-        r_claro.setForeground(a);
-        r_oscuro.setForeground(a);
-        r_morado.setForeground(a);
-        r_azul.setForeground(a);
-        l_text1.setForeground(a);
-        l_text2.setForeground(a);
-        l_text3.setForeground(a);
-        l_text4.setForeground(a);
-        l_text5.setForeground(a);
-        l_alert.setForeground(a);
-        l_creacionnotas.setForeground(a);
+    
+    //ABRIR CUESTIONARIO
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        Cuestionario audi = new Cuestionario();
+        //SEND NOTES
+        audi.nota1content.setText(this.nota1content.getText());
+        audi.nota2content.setText(this.nota2content.getText());
+        audi.nota3content.setText(this.nota3content.getText());
+        audi.nota4content.setText(this.nota4content.getText());
+        audi.nota5content.setText(this.nota5content.getText());
+        
+        audi.nota1title.setText(this.nota1title.getText());
+        audi.nota2title.setText(this.nota2title.getText());
+        audi.nota3title.setText(this.nota3title.getText());
+        audi.nota4title.setText(this.nota4title.getText());
+        audi.nota5title.setText(this.nota5title.getText());
+        //SEND NOTES END
+        
+        //SEND THEME AND TONE
+        audi.tema.setText(this.tema.getText());
+        audi.tone.setText(this.tone.getText());
+        //SEND THEME AND TONE END
+        
+        //SEND TASKS
+            audi.size = size;
+            audi.jlistdata = new String[audi.size];
+            if (size != 0) {
+               for (int i = 0; i<audi.size; i++) {
+                audi.jlistdata[i] = jlistdata[i];
+            }
+            }
+        //END SEND TASKS
+            
+        audi.mostrarVentana();
+        dispose();
+    }                                        
+
+    
+    //ABRIR METODO VISUAL
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        Visual audi = new Visual();
+        //SEND NOTES
+        audi.nota1content.setText(this.nota1content.getText());
+        audi.nota2content.setText(this.nota2content.getText());
+        audi.nota3content.setText(this.nota3content.getText());
+        audi.nota4content.setText(this.nota4content.getText());
+        audi.nota5content.setText(this.nota5content.getText());
+        
+        audi.nota1title.setText(this.nota1title.getText());
+        audi.nota2title.setText(this.nota2title.getText());
+        audi.nota3title.setText(this.nota3title.getText());
+        audi.nota4title.setText(this.nota4title.getText());
+        audi.nota5title.setText(this.nota5title.getText());
+        //SEND NOTES END
+        
+        //SEND THEME AND TONE
+            audi.tema.setText(this.tema.getText());
+            audi.tone.setText(this.tone.getText());
+            
+            if (tema.getText().equals("clara")) {
+                Color MyColor = new Color(235,235,235);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.BLACK);
+            } else if (tema.getText().equals("oscura")) {
+                Color MyColor = new Color(34,39,44);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.WHITE);
+            } else if (tema.getText().equals("morada")) {
+                Color MyColor = new Color(128, 0, 128);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.WHITE);
+            } else if (tema.getText().equals("azul")) {
+                Color MyColor = new Color(85,137,249);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.WHITE);
+            }
+            
+            //SEND THEME AND TONE END
+            
+            //SEND TASKS
+            audi.size = size;
+            audi.jlistdata = new String[audi.size];
+            if (size != 0) {
+               for (int i = 0; i<audi.size; i++) {
+                audi.jlistdata[i] = jlistdata[i];
+            }
+            }
+        //END SEND TASKS
+            
+        audi.show();
+        dispose();
+    }                                        
+
+    
+    //ABRIR METODO AUDITIVO
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        Auditivo audi = new Auditivo();
+        //SEND NOTES
+        audi.nota1content.setText(this.nota1content.getText());
+        audi.nota2content.setText(this.nota2content.getText());
+        audi.nota3content.setText(this.nota3content.getText());
+        audi.nota4content.setText(this.nota4content.getText());
+        audi.nota5content.setText(this.nota5content.getText());
+        
+        audi.nota1title.setText(this.nota1title.getText());
+        audi.nota2title.setText(this.nota2title.getText());
+        audi.nota3title.setText(this.nota3title.getText());
+        audi.nota4title.setText(this.nota4title.getText());
+        audi.nota5title.setText(this.nota5title.getText());
+        //SEND NOTES END
+        
+        //SEND THEME AND TONE
+            audi.tema.setText(this.tema.getText());
+            audi.tone.setText(this.tone.getText());
+            
+            if (tema.getText().equals("clara")) {
+                Color MyColor = new Color(235,235,235);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.BLACK);
+            } else if (tema.getText().equals("oscura")) {
+                Color MyColor = new Color(34,39,44);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.WHITE);
+            } else if (tema.getText().equals("morada")) {
+                Color MyColor = new Color(128, 0, 128);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.WHITE);
+            } else if (tema.getText().equals("azul")) {
+                Color MyColor = new Color(85,137,249);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.WHITE);
+            }
+            
+            //SEND THEME AND TONE END
+            
+            //SEND TASKS
+            audi.size = size;
+            audi.jlistdata = new String[audi.size];
+            if (size != 0) {
+               for (int i = 0; i<audi.size; i++) {
+                audi.jlistdata[i] = jlistdata[i];
+            }
+            }
+        //END SEND TASKS
+            
+        audi.show();
+        dispose();
+    }                                        
+
+    
+    //ABRIR METODO KINESTESICO
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        Kinestesico audi = new Kinestesico();
+        //SEND NOTES
+        audi.nota1content.setText(this.nota1content.getText());
+        audi.nota2content.setText(this.nota2content.getText());
+        audi.nota3content.setText(this.nota3content.getText());
+        audi.nota4content.setText(this.nota4content.getText());
+        audi.nota5content.setText(this.nota5content.getText());
+        
+        audi.nota1title.setText(this.nota1title.getText());
+        audi.nota2title.setText(this.nota2title.getText());
+        audi.nota3title.setText(this.nota3title.getText());
+        audi.nota4title.setText(this.nota4title.getText());
+        audi.nota5title.setText(this.nota5title.getText());
+        //SEND NOTES END
+        
+        //SEND THEME AND TONE
+            audi.tema.setText(this.tema.getText());
+            audi.tone.setText(this.tone.getText());
+            
+            if (tema.getText().equals("clara")) {
+                Color MyColor = new Color(235,235,235);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.BLACK);
+            } else if (tema.getText().equals("oscura")) {
+                Color MyColor = new Color(34,39,44);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.WHITE);
+            } else if (tema.getText().equals("morada")) {
+                Color MyColor = new Color(128, 0, 128);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.WHITE);
+            } else if (tema.getText().equals("azul")) {
+                Color MyColor = new Color(85,137,249);
+                audi.getContentPane().setBackground(MyColor);
+                audi.changetext(Color.WHITE);
+            }
+            
+            //SEND THEME AND TONE END
+            
+            //SEND TASKS
+            audi.size = size;
+            audi.jlistdata = new String[audi.size];
+            if (size != 0) {
+               for (int i = 0; i<audi.size; i++) {
+                audi.jlistdata[i] = jlistdata[i];
+            }
+            }
+        //END SEND TASKS
+            
+        audi.show();
+        dispose();
+    }                                        
+
+    public void changetext(Color a) {
+        Label1.setForeground(a);
+        Label2.setForeground(a);
+        Label3.setForeground(a);
+        Label4.setForeground(a);
+        Label5.setForeground(a);
     }
-    
-    //SET ALERT
-    private void b_confirmartiempoActionPerformed(java.awt.event.ActionEvent evt) throws UnsupportedAudioFileException, IOException, LineUnavailableException {                                                  
-        int hour = (Integer) sp_hora.getValue();
-        int minute = (Integer) sp_minuto.getValue();
-        int second = (Integer) sp_segundo.getValue();
-        File alarmsound = new File("Alarm.wav");
-        AudioInputStream audioStream = AudioSystem.getAudioInputStream(alarmsound);
-        Clip clip = AudioSystem.getClip();
-        clip.open(audioStream);
-        Timer countdown = new Timer();
-        TimerTask disappear = new TimerTask() {
-            @Override
-            public void run() {
-                l_alert.setVisible(false);
-            }
-        };
-        Timer alert = new Timer();
-        TimerTask task = new TimerTask() {
-            @Override
-            public void run() {
-                l_alert.setVisible(true);
-                clip.start();
-            }
-        };
-        int delay = second*1000 + minute*1000*60 + hour*1000*60*60;
-        alert.schedule(task,delay);
-        countdown.schedule(disappear, delay + 11000);
-    }                                            
-
-    //NOTE SYSTEM
-    private void b_note1ActionPerformed(java.awt.event.ActionEvent evt) {                                        
-        //Main Note
-        Nota1 frame1 = new Nota1();
-        frame1.text_contenido.setText(note1.getText());
-        frame1.text_titulo.setText(b_note1.getText());
-        //Note #1 Transfer
-        frame1.note2.setText(note2.getText());
-        frame1.note2title.setText(b_note2.getText());
-        //Note #2 Transfer
-        frame1.note3.setText(note3.getText());
-        frame1.note3title.setText(b_note3.getText());
-        //Note #3 Transfer
-        frame1.note4.setText(note4.getText());
-        frame1.note4title.setText(b_note4.getText());
-        //Note #4 Transfer
-        frame1.note5.setText(note5.getText());
-        frame1.note5title.setText(b_note5.getText());
-        //Open JFrame
-        frame1.show();
-        dispose();
-    }                                       
-
-    private void b_note2ActionPerformed(java.awt.event.ActionEvent evt) {                                        
-        //Main Note
-        Nota2 frame2 = new Nota2();
-        frame2.text_contenido.setText(note2.getText());
-        frame2.text_titulo.setText(b_note2.getText());
-        //Note #1 Transfer
-        frame2.note1.setText(note1.getText());
-        frame2.note1title.setText(b_note1.getText());
-        //Note #2 Transfer
-        frame2.note3.setText(note3.getText());
-        frame2.note3title.setText(b_note3.getText());
-        //Note #3 Transfer
-        frame2.note4.setText(note4.getText());
-        frame2.note4title.setText(b_note4.getText());
-        //Note #4 Transfer
-        frame2.note5.setText(note5.getText());
-        frame2.note5title.setText(b_note5.getText());
-        //Open JFrame
-        frame2.show();
-        dispose();
-    }                                       
-
-    private void b_note3ActionPerformed(java.awt.event.ActionEvent evt) {                                        
-        //Main Note
-        Nota3 frame3 = new Nota3();
-        frame3.text_contenido.setText(note3.getText());
-        frame3.text_titulo.setText(b_note3.getText());
-        //Note #1 Transfer
-        frame3.note1.setText(note1.getText());
-        frame3.note1title.setText(b_note1.getText());
-        //Note #2 Transfer
-        frame3.note2.setText(note2.getText());
-        frame3.note2title.setText(b_note2.getText());
-        //Note #3 Transfer
-        frame3.note4.setText(note4.getText());
-        frame3.note4title.setText(b_note4.getText());
-        //Note #4 Transfer
-        frame3.note5.setText(note5.getText());
-        frame3.note5title.setText(b_note5.getText());
-        //Open JFrame
-        frame3.show();
-        dispose();
-    }                                       
-
-    private void b_note4ActionPerformed(java.awt.event.ActionEvent evt) {                                        
-        //Main Note
-        Nota4 frame4 = new Nota4();
-        frame4.text_contenido.setText(note4.getText());
-        frame4.text_titulo.setText(b_note4.getText());
-        //Note #1 Transfer
-        frame4.note1.setText(note1.getText());
-        frame4.note1title.setText(b_note1.getText());
-        //Note #2 Transfer
-        frame4.note2.setText(note2.getText());
-        frame4.note2title.setText(b_note2.getText());
-        //Note #3 Transfer
-        frame4.note3.setText(note3.getText());
-        frame4.note3title.setText(b_note3.getText());
-        //Note #4 Transfer
-        frame4.note5.setText(note5.getText());
-        frame4.note5title.setText(b_note5.getText());
-        //Open JFrame
-        frame4.show();
-        dispose();
-    }                                       
-
-    private void b_note5ActionPerformed(java.awt.event.ActionEvent evt) {                                        
-        //Main Note
-        Nota5 frame5 = new Nota5();
-        frame5.text_contenido.setText(note5.getText());
-        frame5.text_titulo.setText(b_note5.getText());
-        //Note #1 Transfer
-        frame5.note1.setText(note1.getText());
-        frame5.note1title.setText(b_note1.getText());
-        //Note #2 Transfer
-        frame5.note2.setText(note2.getText());
-        frame5.note2title.setText(b_note2.getText());
-        //Note #3 Transfer
-        frame5.note3.setText(note3.getText());
-        frame5.note3title.setText(b_note3.getText());
-        //Note #4 Transfer
-        frame5.note4.setText(note4.getText());
-        frame5.note4title.setText(b_note4.getText());
-        //Open JFrame
-        frame5.show();
-        dispose();
-    }                                       
-
+   
     //MAIN
     public static void main(String args[]) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         //APPEARANCE CODE "NIMBUS"
@@ -508,33 +563,29 @@ public class JFramePrincipal extends javax.swing.JFrame {
         });
     }
 
+    public int size = 0;
+    public String[] jlistdata;
     // Variables declaration - do not modify                     
-    private javax.swing.JButton b_confirmarcol;
-    private javax.swing.JButton b_confirmartiempo;
-    public javax.swing.JButton b_note1;
-    public javax.swing.JButton b_note2;
-    public javax.swing.JButton b_note3;
-    public javax.swing.JButton b_note4;
-    public javax.swing.JButton b_note5;
-    private javax.swing.ButtonGroup bg_gamacolor;
-    private javax.swing.JLabel l_alert;
-    private javax.swing.JLabel l_creacionnotas;
-    private javax.swing.JLabel l_text1;
-    private javax.swing.JLabel l_text2;
-    private javax.swing.JLabel l_text3;
-    private javax.swing.JLabel l_text4;
-    private javax.swing.JLabel l_text5;
-    public javax.swing.JLabel note1;
-    public javax.swing.JLabel note2;
-    public javax.swing.JLabel note3;
-    public javax.swing.JLabel note4;
-    public javax.swing.JLabel note5;
-    private javax.swing.JRadioButton r_azul;
-    private javax.swing.JRadioButton r_claro;
-    private javax.swing.JRadioButton r_morado;
-    private javax.swing.JRadioButton r_oscuro;
-    private javax.swing.JSpinner sp_hora;
-    private javax.swing.JSpinner sp_minuto;
-    private javax.swing.JSpinner sp_segundo;
+    private javax.swing.JLabel Label1;
+    private javax.swing.JLabel Label2;
+    private javax.swing.JLabel Label3;
+    private javax.swing.JLabel Label4;
+    private javax.swing.JLabel Label5;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    public javax.swing.JLabel nota1content;
+    public javax.swing.JLabel nota1title;
+    public javax.swing.JLabel nota2content;
+    public javax.swing.JLabel nota2title;
+    public javax.swing.JLabel nota3content;
+    public javax.swing.JLabel nota3title;
+    public javax.swing.JLabel nota4content;
+    public javax.swing.JLabel nota4title;
+    public javax.swing.JLabel nota5content;
+    public javax.swing.JLabel nota5title;
+    public javax.swing.JLabel tema;
+    public javax.swing.JLabel tone;
     // End of variables declaration                   
 }
